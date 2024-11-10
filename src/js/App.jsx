@@ -11,6 +11,7 @@ import { Context } from "./store/ContactContext";
 import { agendaTypes } from "./types/types";
 import { NotFound } from "./views/NotFound";
 import { getAgenda } from "./services/agendaServices";
+import { Footer } from "./component/footer";
 
 const App = () => {
 
@@ -61,6 +62,7 @@ const App = () => {
 						<Route path="*" element={<NotFound />} />
 					</Routes>
 			</BrowserRouter>
+			<Footer />
 		</div>
 		
 	);
